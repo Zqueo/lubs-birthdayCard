@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("images/desktopbg0.png") no-repeat center center;
+    background-size: cover;
+}
+
+/* Background mobile */
+@media (max-width: 768px) {
+    body {
+        background: url("images/mobilebg0.png") no-repeat center center;
+        background-size: cover;
+    }
+}
+
+.container {
+    text-align: center;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.45);
+    padding: 30px;
+    border-radius: 16px;
+}
+
+h1 {
+    font-weight: 300;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.contador {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.card span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+/* FLIP */
+.flip {
+    background: #111;
+    border-radius: 10px;
+    padding: 15px 18px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    min-width: 80px;
+    transition: transform 0.4s ease;
+}
+
+/* Animação ao mudar */
+.flip.animate {
+    transform: rotateX(360deg);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .flip {
+        font-size: 2rem;
+        min-width: 70px;
+    }
+}
