@@ -10,6 +10,12 @@ body {
         /*#FFC500*/
     margin: 0px;
     padding: 0px;
+
+    -webkit-touch-callout: none; /* iOS */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 ::selection {

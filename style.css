@@ -13,6 +13,13 @@ body {
 
     background: url("images/desktopbg0.png") no-repeat center center;
     background-size: cover;
+
+
+    -webkit-touch-callout: none; /* iOS */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Background mobile */
