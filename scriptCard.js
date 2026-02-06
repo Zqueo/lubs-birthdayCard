@@ -1,3 +1,5 @@
+document.addEventListener("contextmenu", event => event.preventDefault());
+
 document.addEventListener('DOMContentLoaded', function () {
     const card = document.querySelector('.card');
 

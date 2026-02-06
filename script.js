@@ -1,3 +1,5 @@
+document.addEventListener("contextmenu", event => event.preventDefault());
+
 const dataFinal = new Date("2026-02-23T00:00:00");
 const paginaDestino = "card.html";
 
