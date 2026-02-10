@@ -3,7 +3,9 @@ document.addEventListener("contextmenu", event => event.preventDefault());
 document.addEventListener("keydown", function (e) {
     if (e.key === "F12" || 
         (e.ctrlKey && e.shiftKey && e.key === "I") ||
-        (e.ctrlKey && e.key === "U")) {
+        (e.ctrlKey && e.key === "U") || 
+        (e.ctrlKey && e.shiftKey && e.key === "i") ||
+        (e.ctrlKey && e.key === "u")) {
         e.preventDefault();
     }
 });
@@ -51,3 +53,7 @@ function atualizarContador() {
 
 setInterval(atualizarContador, 1000);
 atualizarContador();
+
+document.getElementById("btnCard").addEventListener("click", () => {
+    window.location.href = "card.html";
+});

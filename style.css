@@ -86,3 +86,28 @@ h1 {
         min-width: 70px;
     }
 }
+
+.acoes {
+    margin-top: 25px;
+}
+
+.botao-card {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.6);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-card:hover {
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 0 12px rgba(255,255,255,0.4);
+}
+
+.botao-card:active {
+    transform: scale(0.96);
+}
