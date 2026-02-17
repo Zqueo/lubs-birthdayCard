@@ -17,21 +17,6 @@
             </div>
 
             <div class="details">
-                <!--
-                    Regras para o texto da carta:
-                        para manter a formatação,             
-                        cada linha só pode ter no maximo 45 caracteres,
-                        com exceção da primeira linha, que só vai o nome da Luísa.
-
-                        no título da carta, cada linha pode ter no máximo 30 caracteres,
-                        lembrando que a ultima linha do título é de uma cor diferente.
-
-                        o número máximo de linhas é para o corpo da carta,
-                        sem contar as assinaturas e o P.S. é de 9 linhas.
-
-                        o P.S. pode ter no máximo 64 caracteres.
-                -->
-
                 <h4 class="color1">Feliz Aniversário</h4>
                 <h4 class="color1">para minha</h4>
                 <h4 class="color2 margin"><b>Artista Favorita!</b></h4>
@@ -50,7 +35,9 @@
                 <p class="text-right">como você sorri pra mim.</p>
                 <p class="text-right">Ass.<b>:</b> Zaqueu</p>
     
-                <h3 class="text-right">P.S. : Estou a <span id="contador">0</span> sem te ver, e não fiquei nem 1 seg sem pensar em você!</h3>
+                <h3 class="text-right">P.S. : Estou a <span id="contador">0</span> sem te ver,</h3>
+                <h3 class="text-right">e não consegui ficar  nem 1 seg sem pensar em você!</h3>
+
 
 
                 <!--
@@ -59,10 +46,22 @@
                     pensamento bom
                     e um lugar onde eu gosto de estar.
 
-                    A música "sinto muito" do Jovem Dionisio descreve bastante como me sinto em relação a você!
+                    A música de fundo, "sinto muito" do Jovem Dionisio,
+                    descreve bastante como me sinto em relação a você!
                 -->
             </div>
             
         </div>
+
+        <div>
+            <audio id="musica" loop>
+                <source src="song\sintoMuitoInstrumental.mp3" type="audio/mpeg">
+            </audio>
+
+            <button id="botaoPlay">▶</button>
+
+            <script src="scriptSong.js"></script>
+        </div>
+
     </body>
 </html>

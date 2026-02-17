@@ -1,5 +1,6 @@
 document.addEventListener("contextmenu", event => event.preventDefault());
 
+/*
 document.addEventListener("keydown", function (e) {
     if (e.key === "F12" || 
         (e.ctrlKey && e.shiftKey && e.key === "I") ||
@@ -9,6 +10,7 @@ document.addEventListener("keydown", function (e) {
         e.preventDefault();
     }
 });
+*/
 
 document.addEventListener('DOMContentLoaded', function () {
     const card = document.querySelector('.card');
@@ -71,3 +73,4 @@ function enviarDados(tipo) {
 window.addEventListener("load", function () {
     enviarDados("carregamento");
 });
+

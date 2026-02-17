@@ -148,3 +148,23 @@ h4 {
     transform: rotate(0deg);
     color: #808080
 }
+
+#botaoPlay {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #C0392B;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+#botaoPlay:hover {
+    transform: scale(1.1);
+}
