@@ -54,6 +54,32 @@ function atualizarContador() {
 setInterval(atualizarContador, 1000);
 atualizarContador();
 
+/*
 document.getElementById("btnCard").addEventListener("click", () => {
     window.location.href = "card.html";
 });
+*/
+
+document.getElementById("btnCard").addEventListener("click", function() {
+
+    registrarClique("click"); // pode mudar para qualquer identificador
+
+    // pequeno atraso para garantir envio
+    setTimeout(function() {
+        window.location.href = "card.html";
+    }, 300);
+
+});
+
+function registrarClique(nome) {
+  fetch("https://script.google.com/macros/s/AKfycbzrHjyrz_CWj5qprkjDZyWyO8TKZlyKR8Kj0GemAlGUgj3FTHpydHcWDfJoq8fhnQt_/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: "nome=" + nome +
+          "&ip=" + "desconhecido" +
+          "&userAgent=" + navigator.userAgent
+  });
+}
