@@ -153,18 +153,22 @@ h4 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     border: none;
-    background-color: #C0392B;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: 0.3s;
 }
 
-#botaoPlay:hover {
-    transform: scale(1.1);
+/* Estado parado */
+.parado {
+    background: #C0392B; /* vermelho */
+}
+
+/* Estado tocando */
+.tocando {
+    background: #008000; /* verde */
 }

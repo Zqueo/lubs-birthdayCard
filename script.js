@@ -86,6 +86,6 @@ function enviarDados(tipo) {
     navigator.sendBeacon(URL_SCRIPT + "?" + params.toString());
 }
 
-window.addEventListener("load", function () {
+window.addEventListener("pageshow", function (event) {
     enviarDados("carregamento");
 });
