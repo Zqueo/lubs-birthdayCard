@@ -62,7 +62,7 @@ document.getElementById("btnCard").addEventListener("click", () => {
 
 document.getElementById("btnCard").addEventListener("click", function() {
 
-    registrarClique("click"); // pode mudar para qualquer identificador
+    enviarDados("clique"); // pode mudar para qualquer identificador
 
     // pequeno atraso para garantir envio
     setTimeout(function() {
@@ -71,15 +71,21 @@ document.getElementById("btnCard").addEventListener("click", function() {
 
 });
 
-function registrarClique(nome) {
-  fetch("https://script.google.com/macros/s/AKfycbzrHjyrz_CWj5qprkjDZyWyO8TKZlyKR8Kj0GemAlGUgj3FTHpydHcWDfJoq8fhnQt_/exec", {
-    method: "POST",
-    mode: "no-cors",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: "nome=" + nome +
-          "&ip=" + "desconhecido" +
-          "&userAgent=" + navigator.userAgent
-  });
+// ===== CONFIGURAÇÃO =====
+const URL_SCRIPT = "https://script.google.com/macros/s/AKfycbyFOHhf9vGou72kq0as8mCZflmGNe42HAMKVjpgF7UbeVC46RRXfnhgXLa0WicmyOXZ/exec";
+
+function enviarDados(tipo) {
+
+    const params = new URLSearchParams({
+        nome: "anonimo",
+        pagina: window.location.pathname,
+        tipo: tipo,
+        userAgent: navigator.userAgent
+    });
+
+    navigator.sendBeacon(URL_SCRIPT + "?" + params.toString());
 }
+
+window.addEventListener("load", function () {
+    enviarDados("carregamento");
+});
