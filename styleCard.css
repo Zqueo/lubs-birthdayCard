@@ -29,15 +29,19 @@ h4 {
 }
 
 .color1 {
-    color: #1BBC9B /*MOUNTAIN MEADOW*/;
+    color: #145a92;
+    /*color: #1BBC9B /*MOUNTAIN MEADOW*/;
 }
 
 .color2 {
-    color: #C0392B /*TALL POPPY*/;
+    color: #b30000;
+    /*color: #C0392B /*TALL POPPY*/;
 }
 
+
 .card {
-    color: #013243; /*SHERPA BLUE*/
+    color: #0a2d49;
+    /*color: #013243; /*SHERPA BLUE*/
     position: absolute;
     top: 50%;
     left: 50%;
