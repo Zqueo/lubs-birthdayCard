@@ -149,6 +149,13 @@ h4 {
     color: #808080
 }
 
+.card .details .container-flutuante h3 {
+    font-size: 5px;
+    line-height: 0px;
+    transform: rotate(0deg);
+    color: #808080
+}
+
 #botaoPlay {
     position: fixed;
     bottom: 20px;
@@ -171,4 +178,10 @@ h4 {
 /* Estado tocando */
 .tocando {
     background: #008000; /* verde */
+}
+
+.container-flutuante {
+    position: fixed;       /* 🔥 ignora o fluxo da página */
+    top: 20px;             /* distância do topo */
+    right: 20px;           /* distância da direita */
 }
