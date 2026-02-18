@@ -38,7 +38,6 @@ h4 {
     /*color: #C0392B /*TALL POPPY*/;
 }
 
-
 .card {
     color: #0a2d49;
     /*color: #013243; /*SHERPA BLUE*/
@@ -53,7 +52,6 @@ h4 {
     box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
     transition: 1s;
 }
-
 
 .card:before {
     content: '';
@@ -181,7 +179,7 @@ h4 {
 }
 
 .container-flutuante {
-    position: fixed;       /* 🔥 ignora o fluxo da página */
+    position: fixed;       /* ignora o fluxo da página */
     top: 20px;             /* distância do topo */
     right: 20px;           /* distância da direita */
 }

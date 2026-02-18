@@ -1,2 +1,2 @@
 # lubs-birthdayCard
- A digital card for a special person.
+ A digital birthday card for a very special person.
