@@ -34,7 +34,7 @@ document.addEventListener("keydown", function (e) {
 const botao = document.getElementById("botaoPlay");
 const musica = document.getElementById("musica");
 
-musica.volume = 0.30;
+musica.volume = 0.05;
 /*
 botao.onclick = function() {
     if (musica.paused) {
